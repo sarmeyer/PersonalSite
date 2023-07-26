@@ -1,4 +1,3 @@
-import Image from "next/image"
 import styles from "./page.module.css"
 import starStyles from "./stars.module.css"
 import { Sacramento } from "next/font/google"
@@ -10,7 +9,7 @@ const sacramento = Sacramento({
   subsets: ["latin"],
 })
 const montserrat = Montserrat({
-  weight: "400",
+  weight: ["400", "700"],
   subsets: ["latin"],
 })
 
@@ -33,21 +32,24 @@ export default function Home() {
           latest trends while appreciating the timeless fundamentals.
         </p>
         <p className={styles.spacing}>
-          At Formidable, I am able to use my expertise to help clients in
-          various industries solve complex problems and create innovative
-          solutions. In my role as an engineering manager, I strive to help my
-          team grow and achieve their goals, while keeping clients happy and
-          projects on track.
+          At{" "}
+          <a className={styles.link} href="https://www.formidable.com">
+            Formidable
+          </a>
+          , I am able to use my expertise to help clients in various industries
+          solve complex problems and create innovative solutions. In my role as
+          an engineering manager, I strive to help my team grow and achieve
+          their goals, while keeping clients happy and projects on track.
         </p>
         <h3 className={styles.spacing}>Let's connect!</h3>
         <div className={styles.social}>
           <a href="https://github.com/sarmeyer">
             <FaGithub className={styles.icon} />
           </a>
-          <a href="https://www.linkedin.com/in/sarmeyer">
+          <a href="https://www.linkedin.com/in/sarahegan">
             <FaLinkedin className={styles.icon} />
           </a>
-          <a href="https://www.instagram.com/sarmeyer">
+          <a href="https://www.instagram.com/sarahegan27">
             <FaInstagram className={styles.icon} />
           </a>
         </div>

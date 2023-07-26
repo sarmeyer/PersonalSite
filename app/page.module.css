@@ -12,17 +12,23 @@
   padding-bottom: 8px;
 }
 
+.link:hover {
+  font-weight: 700;
+}
+
 .spacing {
   padding-bottom: 16px;
 }
 
-.social {
-  display: flex;
-  width: 126px;
-  justify-content: space-between;
+.icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 12px;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.8s ease-in-out;
 }
 
-.icon {
-  width: 25px;
-  height: 25px;
+.icon:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
