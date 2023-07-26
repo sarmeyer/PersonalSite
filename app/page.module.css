@@ -12,6 +12,17 @@
   padding-bottom: 8px;
 }
 
-.subTitle {
+.spacing {
   padding-bottom: 16px;
+}
+
+.social {
+  display: flex;
+  width: 126px;
+  justify-content: space-between;
+}
+
+.icon {
+  width: 25px;
+  height: 25px;
 }
