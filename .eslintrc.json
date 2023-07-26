@@ -1,3 +1,28 @@
 {
-  "extends": "next/core-web-vitals"
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/recommended",
+  ],
+  "rules": {
+    "semi": "off",
+    "no-unused-vars": "off",
+    "import/no-unresolved": "off",
+    "import/named": "off",
+    "import/order": [
+      "error",
+      {
+        "groups": ["builtin", "external", "internal"]
+      }
+    ]
+  },
+  "overrides": [
+    {
+      "files": ["./*.js"],
+      "env": {
+        "node": true
+      }
+    }
+  ]
 }
+
